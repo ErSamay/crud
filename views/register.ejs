@@ -1,0 +1,28 @@
+<!-- 2. In Register Book -> Create a form(id, name,author,description,page,publication,year,prize) -->
+<!-- action="/register" method="POST" -->
+
+
+<%- include("./partials/header.ejs") %>
+
+<%- include("./partials/nav.ejs") %>
+<form action="/register" method="post"> 
+    <input type="number" name="id" placeholder="Enter you Id number">
+    <br><br>
+    <input type="text" name="name" placeholder="Enter name Of Book">
+    <br><br>
+    <input type="text" name="author" placeholder="Enter name of author">
+    <br><br>
+    <textarea name="description" placeholder="About" cols="30" rows="10"></textarea>
+    <br><br>
+    <input type="number" name="page" placeholder="Enter The page number">
+    <br><br>
+    <input type="text" name="publication" placeholder="Enter name of publication">
+    <br><br>
+    <input type="date" name="year" >
+    <br><br>
+    <input type="number" name="price" placeholder="Enter The cost of the book">
+    <br><br>
+    <button>Submit</button>
+</form>
+
+<%- include("./partials/footer.ejs") %>

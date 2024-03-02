@@ -1,0 +1,15 @@
+
+**Book Store App
+
+1. Create Navigation
+Home(/) | Register Book(/register) | Show Books(/show) | About(/about)
+**use partials
+
+2. In Register Book -> Create a form(id, name,author,description,page,publication,year,prize)
+action="/register" method="POST"
+
+3. We get the data in /register POST route "req.body" -> save the data in globle variable "BOOKS"(BOOKS.push(req.body)) and redirect the page to "/show route" -> res.redirect("/show")
+
+4. In /show -> we'll send BOOKS in second argument of res.render("", {Books: BOOKS}) -> with the help of forEach(()=> {book.id..}) we show the cards in "show.ejs"
+card must have name,description, author and a button of "Explore More" 
+

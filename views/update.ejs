@@ -1,0 +1,24 @@
+<%- include("./partials/header.ejs") %>
+
+<%- include("./partials/nav.ejs") %>
+<form action="/update/<%= index %>" method="post"> 
+    <input type="number" name="id" value="<%= data.id %>">
+    <br><br>
+    <input type="text" name="name" value="<%= data.name %>">
+    <br><br>
+    <input type="text" name="author" value="<%= data.author %>">
+    <br><br>
+    <textarea name="description"  cols="30" rows="10"> <%= data.description %> </textarea>
+    <br><br>
+    <input type="number" name="page" value="<%= data.page %>">
+    <br><br>
+    <input type="text" name="publication" value="<%= data.publication %>">
+    <br><br>
+    <input type="date" value="<%= data.year %>" >
+    <br><br>
+    <input type="number" name="price" value="<%= data.price %>">
+    <br><br>
+    <button>Submit</button>
+</form>
+
+<%- include("./partials/footer.ejs") %>
